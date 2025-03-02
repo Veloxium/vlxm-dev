@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+body {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: "Chonburi";
   src: url("../assets/fonts/Chonburi-Regular.ttf") format("truetype");
@@ -14,5 +18,5 @@
 }
 
 @utility zbutton {
-  @apply text-zprimary font-bold py-2 px-4 rounded-md border-2 border-b-4 border-r-4 border-zprimary hover:underline active:border-zsecondary active:text-zsecondary active:border-b-2 active:border-r-2 duration-150 ease-linear active:translate-y-0.5 active:translate-x-0.5;
+  @apply font-bold py-2 px-4 rounded-md border-2 border-b-4 border-r-4 hover:underline active:border-zsecondary active:text-zsecondary active:border-b-2 active:border-r-2 duration-150 ease-linear active:translate-y-0.5 active:translate-x-0.5;
 }
