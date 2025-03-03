@@ -6,13 +6,13 @@ function ZNavbar() {
   const { scrollY } = useScroll();
   const changeColor = useTransform(
     scrollY,
-    [0, 1199, 1200],
-    ["#FFFFFF", "#FFFFFF", "#141e46"]
+    [0, 1199, 1200, 2599, 2600],
+    ["#FFFFFF", "#FFFFFF", "#141e46", "#141e46", "#FFFFFF"]
   );
   const changeColorText = useTransform(
     scrollY,
-    [0, 1199, 1200],
-    ["#141e46", "#141e46", "#FFFFFF"]
+    [0, 1199, 1200, 2599, 2600],
+    ["#141e46", "#141e46", "#FFFFFF", "#FFFFFF", "#141e46"]
   );
 
   return (
