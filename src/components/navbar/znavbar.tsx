@@ -4,7 +4,6 @@ import { motion, useScroll, useTransform, useMotionValue } from "framer-motion";
 
 function ZNavbar() {
   const { scrollY } = useScroll();
-  const heroSize = useTransform(scrollY, [0, 1200], [0.2, 2.5]);
   const changeColor = useTransform(
     scrollY,
     [0, 1199, 1200],

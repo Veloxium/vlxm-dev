@@ -1,30 +1,23 @@
 "use client";
+
 import { motion, useScroll, useTransform, useMotionValue } from "framer-motion";
 import RotatingText from "@/components/rotating-text/rotatingText";
 import Particles from "@/components/particles/particles";
+import { MoveUpLeft } from "lucide-react";
 
-const SECTION_HIGH = 1200;
+const SECTION_HIGH = 1260;
 
 function Hero() {
   const { scrollY } = useScroll();
-  const heroSize = useTransform(scrollY, [0, 1200], [0.2, 2.5]);
-  const changeColor = useTransform(
-    scrollY,
-    [0, 1199, 1200],
-    ["#FFFFFF", "#FFFFFF", "#141e46"]
-  );
-  const changeColorText = useTransform(
-    scrollY,
-    [0, 1199, 1200],
-    ["#141e46", "#141e46", "#FFFFFF"]
-  );
+  const heroSize = useTransform(scrollY, [0, 1200], [0.2, 2]);
+  const movetoright = useTransform(scrollY, [0, 1200], [200, 1000]);
 
   return (
     <div style={{ height: SECTION_HIGH }}>
       <motion.div
         style={{
           scale: heroSize,
-          top: useTransform(scrollY, [0, 1200], [-80, 100]),
+          top: useTransform(scrollY, [0, 1200], [-80, 0]),
         }}
         className="-z-10 fixed w-full h-screen flex flex-col items-center justify-center text-center"
       >
@@ -41,6 +34,9 @@ function Hero() {
               "Tailwind Wizard",
               "Next.js Explorer",
               "Sigma Developer",
+              "Skibidi Bop Bop",
+              "Yes Yes Yes",
+              "+1000 Aura",
             ]}
             mainClassName="px-2 sm:px-2 md:px-3 md:text-3xl bg-zsecondary text-white text-black overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-md border-2 border-b-4 border-r-4 border-zprimary"
             staggerFrom={"last"}
@@ -52,8 +48,20 @@ function Hero() {
             transition={{ type: "spring", damping: 30, stiffness: 400 }}
             rotationInterval={2000}
           />
+          <motion.div
+            className="absolute flex flex-col items-center justify-center"
+            style={{ x: movetoright, y: useTransform(movetoright, value => value + 200) }}
+          >
+            <MoveUpLeft className="rotate-15" size={400} strokeWidth={0.5} />
+            <p className="text-[100px] w-[400vw] leading-48">
+              That's Me, scroll to zoom
+            </p>
+          </motion.div>
         </div>
-        <div style={{ height: SECTION_HIGH }} className="absolute h-screen w-screen">
+        <div
+          style={{ height: SECTION_HIGH }}
+          className="absolute h-screen w-screen"
+        >
           <Particles
             particleColors={["#141e46", "#5e7eff"]}
             particleCount={200}
