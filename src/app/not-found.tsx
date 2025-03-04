@@ -10,7 +10,7 @@ export default function NotFound() {
       <p className="text-gray-600 mt-2">
         Sorry, the page you are looking for does not exist.
       </p>
-      <p className="text-gray-600 mt-2">Whatcha lookin' for, dude?</p>
+      <p className="text-gray-600 mt-2">Whatcha lookin&apos; for, dude?</p>
     </div>
   );
 }
