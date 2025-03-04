@@ -10,7 +10,7 @@ function About() {
   return (
     <section>
       <div className="h-[150vh] w-full bg-zprimary text-white px-8 py-10 md:py-40">
-        <div className="sticky top-40 flex flex-col items-center">
+        <div className="sticky top-28 flex flex-col items-center">
           <motion.div
             initial={{ y: 0 }}
             animate={{ y: [0, -40, 0] }}
