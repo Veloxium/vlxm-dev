@@ -20,3 +20,6 @@ body {
 @utility zbutton {
   @apply font-bold py-2 px-4 rounded-md border-2 border-b-4 border-r-4 hover:underline active:border-zsecondary active:text-zsecondary active:border-b-2 active:border-r-2 duration-150 ease-linear active:translate-y-0.5 active:translate-x-0.5;
 }
+@utility zbuttontwo {
+  @apply font-bold py-2 px-4 rounded-md border-zprimary border-2 border-b-4 border-r-4 hover:underline active:border-zsecondary active:text-white active:border-b-2 active:border-r-2 duration-150 ease-linear active:translate-y-0.5 active:translate-x-0.5 bg-zsecondary text-white;
+}

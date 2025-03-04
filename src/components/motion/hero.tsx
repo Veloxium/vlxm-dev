@@ -56,22 +56,22 @@ function Hero() {
                 y: useTransform(movetoright, (value) => value + 200),
               }}
             >
-              <motion.div
+                <motion.div
                 initial={{ y: 0, x: 0 }}
-                animate={{ y: [0, -40, 0], x: [0, 40, 0] }}
+                animate={{ y: [0, -50, 0], x: [0, -50, 0], rotate: [0, 15, 0] }}
                 transition={{
-                  duration: 1,
+                  duration: 1.5,
                   repeat: Infinity,
                   repeatType: "loop",
                   ease: "easeInOut",
                 }}
-              >
+                >
                 <MoveUpLeft
                   className="rotate-15"
                   size={400}
                   strokeWidth={0.5}
                 />
-              </motion.div>
+                </motion.div>
               <p className="text-[100px] w-[400vw] leading-48">
                 The heck is that?😱, scroll to zoom
               </p>

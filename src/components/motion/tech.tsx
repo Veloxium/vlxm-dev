@@ -23,7 +23,6 @@ const items = [
   { Icon: FaGitAlt, label: "Git" },
 ];
 
-// Framer Motion variants
 const containerVariants = {
   hidden: { opacity: 0 },
   show: {
@@ -51,9 +50,9 @@ function Tech() {
     <section>
       <div className="h-screen bg-white py-10 px-8">
         <div className="sticky top-40 flex flex-col">
-          <div className="text-zprimary text-justify flex flex-col gap-2">
+          <div className="text-zprimary text-justify flex flex-col gap-2 md:max-w-1/2 md:mx-auto w-full">
             <p className="text-4xl font-chonburi">Tech Stack</p>
-            <p className="mt-6">
+            <p className="mt-6 md:text-lg">
               Here's my stack—built for crafting sleek, fast, and dynamic web
               experiences.
             </p>
@@ -62,8 +61,8 @@ function Tech() {
               initial="hidden"
               whileInView="show"
               exit="exit"
-              viewport={{ amount: 0.8 }}
-              className="grid grid-cols-3 text-center gap-6 place-items-center mt-2"
+              viewport={{ amount: 0.2 }}
+              className="grid grid-cols-3 md:grid-cols-3 text-center gap-6 place-items-center mt-2 md:mt-4"
             >
               {items.map(({ Icon, label }, index) => (
                 <motion.div
