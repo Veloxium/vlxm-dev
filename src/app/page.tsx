@@ -14,7 +14,7 @@ export default function Home() {
       <Project />
       <footer>
         <div className="h-40 w-full bg-white flex justify-center items-center text-xl text-center italic pb-10">
-          <p>"Stay Hungry, Stay Foolish."</p>
+          <p>&quot;Stay Hungry, Stay Foolish.&quot;</p>
         </div>
         <div className="h-16 bg-zprimary flex justify-center items-center">
           <p className="text-white">© 2025 Veloxium</p>

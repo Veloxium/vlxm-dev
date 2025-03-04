@@ -53,8 +53,8 @@ function Tech() {
           <div className="text-zprimary text-justify flex flex-col gap-2 md:max-w-1/2 md:mx-auto w-full">
             <p className="text-4xl font-chonburi">Tech Stack</p>
             <p className="mt-6 md:text-lg">
-              Here's my stack—built for crafting sleek, fast, and dynamic web
-              experiences.
+              Here&apos;s my stack—built for crafting sleek, fast, and dynamic
+              web experiences.
             </p>
             <motion.div
               variants={containerVariants}

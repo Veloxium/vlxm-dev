@@ -1,7 +1,7 @@
 "use client";
 
+import { motion, useScroll, useTransform } from "framer-motion";
 import Link from "next/link";
-import { motion, useScroll, useTransform, useMotionValue } from "framer-motion";
 
 function ZNavbar() {
   const { scrollY } = useScroll();

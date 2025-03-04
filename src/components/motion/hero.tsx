@@ -24,7 +24,7 @@ function Hero() {
         >
           <p className="text-xl md:text-4xl font-semibold">Hi There,</p>
           <p className="text-2xl md:text-6xl font-bold">
-            I'm <span className="text-zprimary">Mochammad Fernanda</span>
+            I&apos;m <span className="text-zprimary">Mochammad Fernanda</span>
           </p>
           <div className="flex items-center justify-center gap-2 mt-1 md:mt-3 md:gap-4">
             <p className="text-xl md:text-3xl font-semibold mb-1">a</p>
@@ -56,7 +56,7 @@ function Hero() {
                 y: useTransform(movetoright, (value) => value + 200),
               }}
             >
-                <motion.div
+              <motion.div
                 initial={{ y: 0, x: 0 }}
                 animate={{ y: [0, -50, 0], x: [0, -50, 0], rotate: [0, 15, 0] }}
                 transition={{
@@ -65,13 +65,13 @@ function Hero() {
                   repeatType: "loop",
                   ease: "easeInOut",
                 }}
-                >
+              >
                 <MoveUpLeft
                   className="rotate-15"
                   size={400}
                   strokeWidth={0.5}
                 />
-                </motion.div>
+              </motion.div>
               <p className="text-[100px] w-[400vw] leading-48">
                 The heck is that?😱, scroll to zoom
               </p>

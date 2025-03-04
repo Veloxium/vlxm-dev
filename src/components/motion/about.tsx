@@ -41,20 +41,20 @@ function About() {
           >
             <p className="text-4xl font-chonburi">ABOUT ME</p>
             <p className="mt-6 md:text-lg">
-              I'm Mochammad Fernanda — a passionate frontend developer who loves
+              I&apos;m Mochammad Fernanda — a passionate frontend developer who loves
               building sleek, interactive, and high-performance web
               applications. With a strong focus on{" "}
               <span className="text-zsecondary">React.js</span> and{" "}
               <span className="text-zsecondary">Next.js</span>
             </p>
             <p className="md:text-lg">
-              Whether it's designing intuitive dashboards, creating seamless
-              user experiences, or optimizing web performance, I'm always up for{" "}
-              <span className="text-yellow-400">the challenge</span>. Let's
+              Whether it&apos;s designing intuitive dashboards, creating seamless
+              user experiences, or optimizing web performance, I&apos;m always up for{" "}
+              <span className="text-yellow-400">the challenge</span>. Let&apos;s
               build something amazing together!
             </p>
             <p className="text-xl font-chonburi mt-4 underline">
-              Let's Connect
+              Let&apos;s Connect
             </p>
             <div className="mt-4 flex gap-x-10 gap-y-6 w-full flex-wrap ">
               <a

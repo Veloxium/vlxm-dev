@@ -1,11 +1,10 @@
 "use client";
 
+import { motion } from "framer-motion";
+import { Milestone } from "lucide-react";
 import { useEffect, useState } from "react";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
-import { motion } from "framer-motion";
-import { div } from "framer-motion/client";
-import { Milestone } from "lucide-react";
 
 type Repo = {
   id: number;

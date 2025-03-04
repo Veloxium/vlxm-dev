@@ -1,8 +1,8 @@
-import { NextRequest, NextResponse } from "next/server";
-import path from "path";
 import fs from "fs";
+import { NextResponse } from "next/server";
+import path from "path";
 
-export async function GET(req: NextRequest) {
+export async function GET() {
     const filePath = path.join(process.cwd(), "src/assets/files/cv.pdf");
 
     if (!fs.existsSync(filePath)) {
