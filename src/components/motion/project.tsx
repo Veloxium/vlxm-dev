@@ -72,7 +72,7 @@ function Project() {
               initial="hidden"
               whileInView="show"
               exit="exit"
-              viewport={{ amount: 0.2 }}
+              viewport={{ amount: 0.2, once: true }}
               className="grid grid-cols-1 gap-6"
             >
               {repos.length !== 0 ? (

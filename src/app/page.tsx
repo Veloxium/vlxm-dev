@@ -1,3 +1,4 @@
+import ZFooter from "@/components/footer/zfooter";
 import About from "@/components/motion/about";
 import Hero from "@/components/motion/hero";
 import Project from "@/components/motion/project";
@@ -12,14 +13,7 @@ export default function Home() {
       <About />
       <Tech />
       <Project />
-      <footer>
-        <div className="h-40 w-full bg-white flex justify-center items-center text-xl text-center italic pb-10">
-          <p>&quot;Stay Hungry, Stay Foolish.&quot;</p>
-        </div>
-        <div className="h-16 bg-zprimary flex justify-center items-center">
-          <p className="text-white">© 2025 Veloxium</p>
-        </div>
-      </footer>
+      <ZFooter />
     </main>
   );
 }

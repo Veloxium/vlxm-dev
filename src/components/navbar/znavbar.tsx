@@ -26,7 +26,7 @@ function ZNavbar() {
       }}
       className="fixed z-20 top-0 w-full flex items-center justify-between px-6 pt-2 md:px-20"
     >
-      <Link href="/" className="p-4 font-chonburi">
+      <Link href="/" className="py-4 font-chonburi">
         VLXM.DEV
       </Link>
       <a href={"/api/download"} className="zbutton">
