@@ -48,8 +48,8 @@ const itemVariants = {
 function Tech() {
   return (
     <section>
-      <div className="h-screen bg-white py-10 px-8">
-        <div className="sticky top-40 flex flex-col">
+      <div className="h-[150vh] bg-white py-10 px-8">
+        <div className="sticky top-20 flex flex-col">
           <div className="text-zprimary text-justify flex flex-col gap-2 md:max-w-1/2 md:mx-auto w-full">
             <p className="text-4xl font-chonburi">Tech Stack</p>
             <p className="mt-6 md:text-lg">

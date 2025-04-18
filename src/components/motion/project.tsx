@@ -59,13 +59,17 @@ function Project() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white py-10 px-8">
-      <div className="sticky top-40 flex flex-col">
+    <div className="relative min-h-screen bg-white py-10 px-8">
+      <div className="flex flex-col">
         <div className="text-zprimary text-justify flex flex-col gap-2 md:max-w-1/2 w-full md:mx-auto">
-          <p className="text-4xl font-chonburi">Projects</p>
-          <p className="mt-6 md:text-lg">
-            Some of my coolest builds—crafted with code and a bit of magic.
-          </p>
+          <div className="bg-white sticky top-10 rounded-md">
+            <div className="flex flex-col mb-2 mt-10 bg-white py-4 px-4 rounded-md border-2 border-b-4 border-r-4 z-10">
+              <p className="text-4xl font-chonburi">Projects</p>
+              <p className="mt-6 md:text-lg">
+                Some of my coolest builds—crafted with code and a bit of magic.
+              </p>
+            </div>
+          </div>
           <div className="mt-4">
             <motion.div
               variants={containerVariants}
