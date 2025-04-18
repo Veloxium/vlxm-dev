@@ -70,13 +70,13 @@ function Project() {
               </p>
             </div>
           </div>
-          <div className="mt-4">
+          <div className="pt-40">
             <motion.div
               variants={containerVariants}
               initial="hidden"
               whileInView="show"
               exit="exit"
-              viewport={{ amount: 0.2, once: true }}
+              viewport={{ amount: 0.1, once: true }}
               className="grid grid-cols-1 gap-6"
             >
               {repos.length !== 0 ? (
