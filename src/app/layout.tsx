@@ -1,10 +1,4 @@
-import type { Metadata } from "next";
 import "./globals.css";
-
-export const metadata: Metadata = {
-  title: "Veloxium Dev",
-  description: "Personal Website of Veloxium Dev",
-};
 
 export default function RootLayout({
   children,
@@ -12,11 +6,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      data-cursor-style="true"
-      data-chrome-id="bmjmipppabdlpjccanalncobmbacckjn"
-    >
+    <html lang="en">
+      <head>
+        <title>Veloxium Dev | Frontend Developer</title>
+        <meta
+          name="description"
+          content="Portfolio and projects of Veloxium, a front-end web developer specializing in React, Next.js, and UI design."
+        />
+      </head>
+
       <body>{children}</body>
     </html>
   );

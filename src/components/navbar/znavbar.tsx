@@ -29,7 +29,10 @@ function ZNavbar() {
       <Link href="/" className="py-4 font-chonburi">
         VLXM.DEV
       </Link>
-      <a href={"/api/download"} className="zbutton">
+      {/* <a href={"/api/download"} className="zbutton">
+        Download My CV
+      </a> */}
+      <a href="/file/cv.pdf" download className="zbutton">
         Download My CV
       </a>
     </motion.nav>
