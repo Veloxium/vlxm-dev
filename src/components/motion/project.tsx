@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { Milestone } from "lucide-react";
 import { useEffect, useState } from "react";
 import Skeleton from "react-loading-skeleton";
@@ -16,28 +15,6 @@ type Repo = {
   topics: string[];
   pushed_at: string;
   created_at: string;
-};
-
-const containerVariants = {
-  hidden: { opacity: 0 },
-  show: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.3,
-    },
-  },
-  exit: {
-    opacity: 0,
-    transition: {
-      staggerChildren: 0.3,
-    },
-  },
-};
-
-const itemVariants = {
-  hidden: { opacity: 0, y: 20 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.3, ease: "easeOut" } },
-  exit: { opacity: 0, y: 20, transition: { duration: 0.3, ease: "easeOut" } },
 };
 
 function Project() {
@@ -71,18 +48,12 @@ function Project() {
             </div>
           </div>
           <div className="pt-40">
-            <motion.div
-              variants={containerVariants}
-              initial="hidden"
-              whileInView="show"
-              exit="exit"
-              viewport={{ amount: 0.1, once: true }}
+            <div
               className="grid grid-cols-1 gap-6"
             >
               {repos.length !== 0 ? (
                 repos.map((repo: Repo) => (
-                  <motion.div
-                    variants={itemVariants}
+                  <div
                     key={repo.id}
                     className="bg-white flex flex-col justify-between rounded-md border-2 border-b-4 border-r-4 px-4 py-6"
                   >
@@ -130,7 +101,7 @@ function Project() {
                         </a>
                       )}
                     </div>
-                  </motion.div>
+                  </div>
                 ))
               ) : (
                 <div className="bg-white flex flex-col justify-between rounded-md border-2 border-b-4 border-r-4 px-4 py-6">
@@ -151,15 +122,14 @@ function Project() {
                 </div>
               )}
               {repos.length !== 0 && (
-                <motion.div
-                  variants={itemVariants}
+                <div
                   key={"soon"}
                   className="bg-white flex flex-col justify-between rounded-md border-2 border-b-4 border-r-4 px-4 py-6"
                 >
                   <p>Update coming soon!</p>
-                </motion.div>
+                </div>
               )}
-            </motion.div>
+            </div>
           </div>
         </div>
       </div>

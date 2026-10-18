@@ -1,4 +1,5 @@
 import ZFooter from "@/components/footer/zfooter";
+import PageWrapper from "@/components/loader/pagewrapper";
 import About from "@/components/motion/about";
 import Hero from "@/components/motion/hero";
 import Project from "@/components/motion/project";
@@ -8,12 +9,14 @@ import ZNavbar from "@/components/navbar/znavbar";
 export default function Home() {
   return (
     <main>
-      <ZNavbar />
-      <Hero />
-      <About />
-      <Tech />
-      <Project />
-      <ZFooter />
+      <PageWrapper>
+        <ZNavbar />
+        <Hero />
+        <About />
+        <Tech />
+        <Project />
+        <ZFooter />
+      </PageWrapper>
     </main>
   );
 }
